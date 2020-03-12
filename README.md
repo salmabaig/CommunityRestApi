@@ -8,7 +8,7 @@ This Rest Api was created with the below tools:
   * Unittest: utilized unittest module
   * Pycharm, sqlite3 database, cURL
 
-* Files included: 
+Files included: 
  - restApi.py - holds rest api code for community table
  - Test_api.py - unittest file for rest api
 
