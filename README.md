@@ -8,6 +8,10 @@ This Rest Api was created with the below tools:
   * Unittest: utilized unittest module
   * Pycharm, sqlite3 database, cURL
 
+* Files included: 
+ - restApi.py - holds rest api code for community table
+ - Test_api.py - unittest file for rest api
+
 
 ## Design Details: 
 The following highlights the notes from design phase:
@@ -32,3 +36,8 @@ The following highlights the notes from design phase:
        * Fave_a table is required
          * Rows: user_id, a_id
       * Queries fav_q and fav_a table to display to user. 
+      
+      
+## Testing Instructions
+
+
