@@ -28,7 +28,7 @@ The following highlights the notes from design phase:
  * Requirement 5: bookmark question or answers
     * Requires table to mark favorite question and answer
        * Fave_q table is required
-        * Rows: user_id, q_id
+         * Rows: user_id, q_id
        * Fave_a table is required
-        * Rows: user_id, a_id
+         * Rows: user_id, a_id
       * Queries fav_q and fav_a table to display to user. 
