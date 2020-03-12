@@ -9,3 +9,5 @@ This Rest Api was created with the below tools:
   * Pycharm, sqlite3 database, cURL
 
 
+## Design Details: 
+The following highlights the notes from design phase:
