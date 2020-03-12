@@ -40,6 +40,12 @@ The following highlights the notes from design phase:
       
 ## Testing Instructions
 
+###### Testing with unittest file: 
+* Place restApi.py and test_api.py in same file
+* Run the following command
+ - python -m unittest test_api.py
+* Database file, test.db, will be produced
+
 ###### Manual testing without unittest test file: 
 
 * Written with Python 3.6.4
