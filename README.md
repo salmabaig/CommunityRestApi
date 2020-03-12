@@ -7,6 +7,7 @@ This Rest Api was created with the below tools:
   * Python, Flask, flask_restful, flask_sqlalchemy, flask_httpauth, simplejson
   * Unittest: utilized unittest module
   * Pycharm, sqlite3 database, cURL
+  * Written with Python 3.6.4
 
 Files included: 
  - restApi.py - holds rest api code for community table
@@ -19,39 +20,39 @@ Files included:
 The following highlights the notes from design phase:
 
 
- * User table : In order to keep track of who is posting question/answer and marking favorite question/answer, user table is required. Certain actions require user authentication. Utilizing sqlite3 database for temporary storage.  
+ * User table : In order to keep track of who is posting a question/answer or favoriting a question/answer, a user table is required. Certain actions require user authentication. This project utilizes a sqlite3 database for temporary storage.  
     * Rows for User Table: u_id, username, password
  * Requirement 1: Post questions for other users  
-    * Questions table is required.
-    * Table rows: q_id, question, userId(to keep track of author of question.)
+    * Table Name: Questions
+    * rows: q_id, question, userId(to keep track of author of question.)
  * Requirement 2: Answer question posted by others
-    * Answer table is required
-    * Table rows: a_id, answer, user_Id, q_id(link question and answer)
+    * Table Name: Answer
+    * rows: a_id, answer, user_Id, q_id(link question and answer)
  * Requirement 3: View questions
-    * Requires a retrieval query from question table
+    * Requires a retrieval query from Question table
  * Requirement 4: View responses to questions
-    * Requires retrieval from both question and answer table.
+    * Requires retrieval from both Question and Answer table.
  * Requirement 5: bookmark question or answers
     * Requires table to mark favorite question and answer
-       * Fave_q table is required
+       * Table Name: Fave_q
          * Rows: user_id, q_id
-       * Fave_a table is required
+       * Table Name: Fave_a 
          * Rows: user_id, a_id
-      * Queries fav_q and fav_a table to display to user. 
+      * Query fav_q and fav_a tables to display to user. 
       
       
 ## Testing Instructions
 
+* Please be sure following packages are installed with pip(flask, flask_restful, flask_sqlalchemy, flask_httpauth, passlib)
+
 ###### Testing with unittest file: 
 * Place restApi.py and test_api.py in same file
-* Run the following command
+* Run the following in the command prompt from the same location as above files.
     - python -m unittest test_api.py
-* Database file, test.db, will be produced
+* Database file, test.db, will be produced after run.
 
 ###### Manual testing without unittest test file: 
 
-* Written with Python 3.6.4
-* Please be sure following packages are installed with pip(flask, flask_restful, flask_sqlalchemy, flask_httpauth, passlib
 * Go to directory with restApi.py and run following command
  - python restApi.py
 * Use cURL to test functionality: 
