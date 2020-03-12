@@ -57,13 +57,21 @@ The following highlights the notes from design phase:
  - python restApi.py
 * Use cURL to test functionality: 
  - Add new user: curl -i -X POST -H "Content-Type: application/json" -d '{"username":"salma","password":"siddiqua"}' http://127.0.0.1:5000/api/users
+ 
  - Add new question : curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" -d '{"question":"How do you loose weight?"}' http://127.0.0.1:5000/api/questions
+ 
  - Add answer: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" -d '{"answer":"Yes", "q_id":"3"}' http://127.0.0.1:5000/api/answers
+ 
  - Add favorite question: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" -d '{"q_id”:”1”}’ http://127.0.0.1:5000/api/favQ
+ 
  - Add favorite answer: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" -d '{"a_id”:”1”}’ http://127.0.0.1:5000/api/favA
+ 
  - View favorite questions: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" http://127.0.0.1:5000/api/view/favQ
+ 
  - View favorite answers: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" http://127.0.0.1:5000/api/view/favA
+ 
  - View all questions: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" http://127.0.0.1:5000/api/view/allQ
+ 
  - View all questions and responses: curl -u salma:siddiqua -i -X POST -H "Content-Type: application/json" http://127.0.0.1:5000/api/view/allQA
 
 * Database file, db.sqlite, will be created
