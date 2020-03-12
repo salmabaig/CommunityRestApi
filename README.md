@@ -11,6 +11,8 @@ This Rest Api was created with the below tools:
 Files included: 
  - restApi.py - holds rest api code for community table
  - Test_api.py - unittest file for rest api
+ - db.sqlite - sample DB from manual test run
+ - test.db - sample DB from unittest run
 
 
 ## Design Details: 
